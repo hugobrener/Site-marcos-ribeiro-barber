@@ -44,3 +44,39 @@ header {
     border-radius: 5px;
 } 
 
+.container {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+#intro {
+    background-color: black;
+    color: white;
+    font-family: 'League Gothic', sans-serif;
+}
+
+#intro img {
+    scale: 0.75;
+}
+
+#intro ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+#intro ul > li {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#intro p  {
+   
+}
