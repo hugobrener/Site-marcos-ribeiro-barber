@@ -7,17 +7,40 @@
     padding: 0px;
 }
 
+body {
+    position: relative;
+}
 header {
     background-color: #22060A;
     display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    height: 80px;
+    padding: 10px 100px;
+    
+    
 }
 
-header>nav {
-    display: inline-block;
-}
-
-header>nav>ul>li {
+.menu {
+    display: flex;
     list-style: none;
-    display: inline;
-    justify-content: space-around;
+    gap: 30px;
+    
 }
+
+.menu a {
+    padding: 0px 10px ;
+    font-size: 1em;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 10px;
+    border-radius: 5px;
+} 
+
