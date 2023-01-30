@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #22060A;
+    display: flex;
+}
+
+header>nav {
+    display: inline-block;
+}
+
+header>nav>ul>li {
+    list-style: none;
+    display: inline;
+    justify-content: space-around;
+}
