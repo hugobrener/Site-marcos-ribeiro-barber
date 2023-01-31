@@ -18,8 +18,9 @@ header {
     align-items: center;
     height: 80px;
     padding: 10px 100px;
-    
-    
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .menu {
@@ -44,39 +45,59 @@ header {
     border-radius: 5px;
 } 
 
-.container {
-    max-width: 900px;
-    display: flex;
-    justify-content: center;
+main {
     margin: auto;
-    align-items: center;
+    font-family: Helvetica, sans-serif;
 }
 
-#intro {
+
+
+.intro {
+    padding-top: 80px;
+    background-image: url(../imagens/bg-intro.svg);
+    background-size: cover;
     background-color: black;
     color: white;
     font-family: 'League Gothic', sans-serif;
-}
-
-#intro img {
-    scale: 0.75;
-}
-
-#intro ul {
-    list-style: none;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    
-    
+    align-items: center;
 }
 
-#intro ul > li {
+.contato-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.contato {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 150px;
 }
 
-#intro p  {
-   
+.contato > p {
+    padding-left: 10px ;
+}
+
+.espaco {
+    background-image: url(../imagens/bg-espaco.svg);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.espaco h1 {
+    padding: 20px;
+    width: 300px;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 42px;
+    background-color: rgba(0, 0, 0, 0.418);
 }
