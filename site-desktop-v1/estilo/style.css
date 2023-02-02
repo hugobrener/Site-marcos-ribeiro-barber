@@ -64,6 +64,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 600px  ;
 }
 
 .contato-container {
@@ -101,3 +102,95 @@ main {
     font-size: 42px;
     background-color: rgba(0, 0, 0, 0.418);
 }
+
+.servicos {
+    background-image: url(../imagens/bg-servicos01.svg);
+    background-size: cover;
+    background-color: black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 100px
+    ;
+}
+
+
+.corte {
+    padding: 20px ;
+
+}
+
+.corte p {
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.171);
+
+}
+
+.barba {
+    padding: 20px ;
+
+}
+
+.barba p {
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.171);
+
+}
+
+.tratamento {
+    padding: 20px ;
+
+}
+
+.tratamento p {
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.171);
+
+}
+
+.produtos {
+    background-image: url(../imagens/bg-produtos.svg);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    align-items: center;
+}
+
+.produtos p {
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.produto-pomada p {
+    margin-top: -60px;
+    padding-bottom: 40px;
+}
+
+.agenda-curso-container {
+    background-color: black;
+    display: flex;
+    color: white;
+}
+
+.agenda-curso-container h2 {
+    
+}
+.agenda-curso-container img {
+    scale: 0.75;
+} 
+
+footer {
+    background-color: #22060A;
+    display: flex;
+    padding: 40px;
+}
+
