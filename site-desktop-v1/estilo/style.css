@@ -67,32 +67,15 @@ main {
     height: 600px  ;
 }
 
-.contato-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-}
-.contato {
-    display: flex;
-    padding: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 150px;
-}
-
-.contato > p {
-    padding-left: 10px ;
-}
-
 .espaco {
-    background-image: url(../imagens/bg-espaco.svg);
+    /*background-image: url(../imagens/bg-espaco.svg);*/
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 160px;
     align-items: center;
-    padding: 0px 40px;
+    padding: 0px 60px;
 }
 
 .espaco h1 {
@@ -175,22 +158,65 @@ main {
     padding-bottom: 40px;
 }
 
+
 .agenda-curso-container {
     background-color: black;
     display: flex;
     color: white;
+    justify-content: center;
+}
+
+.agenda-curso-container li {
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    padding: 60px;
+
+}
+
+#img-calendar{
+    width: 450px;
+    height: 250px;
+    background-image: url(../imagens/foto-calendario.svg);
+    text-align: center;
+} 
+
+#img-curso{
+    width: 450px;
+    height: 250px;
+    background-image: url(../imagens/foto-cursos.svg);
+    background-position: center;
+    text-align: center;
 }
 
 .agenda-curso-container h2 {
+    padding: 10px;
+    background-color: #020202ab; 
+    position: absolute;
+    width: 300px;
+    margin: 60px 60px;  
+}
+
+.contato {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    gap: 375px;
+
+}
+
+.contato li {
+    list-style: none;
+    padding: 20px;
     
 }
-.agenda-curso-container img {
-    scale: 0.75;
-} 
 
 footer {
     background-color: #22060A;
-    display: flex;
-    padding: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
 
