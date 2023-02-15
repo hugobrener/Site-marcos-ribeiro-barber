@@ -64,8 +64,22 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px  ;
+    height: 550px  ;
 }
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.contato-container>div {
+    align-items: center;
+    
+}
+
 
 .espaco {
     /*background-image: url(../imagens/bg-espaco.svg);*/
