@@ -7,9 +7,14 @@
     padding: 0px;
 }
 
-body {
-    position: relative;
+:root {
+    --cor-principal: #22060A;
+    --fonte-principal: 'League Gothic', sans-serif;
 }
+
+/* /* body {
+    position: relative;
+} */
 header {
     background-color: #22060A;
     display: flex;
@@ -48,15 +53,13 @@ header {
 main {
     margin: auto;
     font-family: Helvetica, sans-serif;
+    background: linear-gradient(0.25turn, rgb(31, 23, 23), var(--cor-principal), rgb(94, 79, 79));
 }
 
 
 
 .intro {
     padding-top: 80px;
-    background-image: url(../imagens/bg-intro.svg);
-    background-size: cover;
-    background-color: black;
     color: white;
     font-family: 'League Gothic', sans-serif;
     position: relative;
@@ -82,8 +85,6 @@ main {
 
 
 .espaco {
-    /*background-image: url(../imagens/bg-espaco.svg);*/
-    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
@@ -174,7 +175,6 @@ main {
 
 
 .agenda-curso-container {
-    background-color: black;
     display: flex;
     color: white;
     justify-content: center;
@@ -212,7 +212,6 @@ main {
 }
 
 .contato {
-    background-color: black;
     color: white;
     display: flex;
     justify-content: center; 
