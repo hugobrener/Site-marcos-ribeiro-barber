@@ -68,6 +68,7 @@ header li {
     object-fit: cover;
     position: absolute;
     opacity: 0;
+    transition: opacity 800ms;
 
 }
 
