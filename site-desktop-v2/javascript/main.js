@@ -1,17 +1,26 @@
-foto = document.getElementsByClassName("bg-intro")
-fotoBG = Array.from(foto)
+let time = 4000,
+    currentImageIndex = 0,
+    images = document.getElementsByClassName("bg-intro")
+    max = images.length
 
-function slide() {
-    
-    
-    console.log(fotoBG)
-    fotoBG.forEach(element => {
-      setTimeout(element.setAttribute('id','selected'), 5000)
-         
-    });
-    
+fotoBG = Array.from(images)
+
+function next() {
+    images[currentImageIndex].removeAttribute('id','selected')
+
+    currentImageIndex ++
+    if (currentImageIndex >= max)
+        currentImageIndex = 0
+
+    images[currentImageIndex].setAttribute('id', 'selected')
+
 }
 
+function start(){
+    setInterval(()=> {
+        next()
+    }, time)
+}    
 
 
-window.addEventListener("load", slide)
+ window.addEventListener("load", start) 
