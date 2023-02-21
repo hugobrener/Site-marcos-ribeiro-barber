@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +9,8 @@
     --cor-principal: #830a0a;
     --cor-secundaria: #000;
     --cor-alternativa: white;
-    --fonte-principal: Helvetica, sans-serif;
-    --fonte-alternativa: Arial, sans-serif;
+    --fonte-principal: 'Space Grotesk', sans-serif;;
+    --fonte-alternativa: Helvetica, sans-serif;
 }
 
 header {
