@@ -19,7 +19,7 @@
 
 main {
     width: 100vw;
-    background-image: linear-gradient(to Bottom, var(--cor-principal), var(--cor-neutra), var(--cor-secundaria) );
+    background-image: linear-gradient(to Bottom, var(--cor-secundaria), var(--cor-neutra), var(--cor-secundaria));
     
 }
 
@@ -52,9 +52,11 @@ h1 {
     gap: 48px;
 }
 #trio-banda {
-    width: 609px;
-    border-radius: 1rem;
+    width: 480px;
+    height: 380px;
+    border-radius: 16px;
     margin: auto;
+    object-fit: cover;
     
 }
 
@@ -140,7 +142,7 @@ h3 {
     line-height: auto;
     font-family: var(--fonte-titulo);
     padding: 16px 16px;
-    background-color: #008364;
+    background-color: var(--cor-principal);
     margin: auto;
     width: max-content;
         
