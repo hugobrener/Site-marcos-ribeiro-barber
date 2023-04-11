@@ -8,10 +8,10 @@
  
 
 :root {
-    --cor-principal: #4650BD;
-    --cor-secundaria: #304968;
-    --cor-terciaria: #36C1A0;
-    --cor-neutra: #B6BCFF;
+    --cor-principal: #830a0a;
+    --cor-secundaria: #000;
+    --cor-terciaria: #fff;
+    --cor-neutra: #b9b9b9;
     --fonte-titulo: 'Calistoga', 'cursive';
     --fonte-texto: 'Raleway', sans-serif;
 }
@@ -19,14 +19,14 @@
 
 main {
     width: 100vw;
-    background-image: linear-gradient(to Bottom, #304968, #36c1a0, #4650bd );
+    background-image: linear-gradient(to Bottom, var(--cor-principal), var(--cor-neutra), var(--cor-secundaria) );
     
 }
 
 .banner {
     width: 100vw;
     height: 407px;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),url(../imagens/bg-banner1-1440.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),url(../imagens/espaço.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
