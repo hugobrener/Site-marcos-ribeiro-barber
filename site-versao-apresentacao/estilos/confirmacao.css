@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+
+:root {
+    --cor-principal: #4650BD;
+    --cor-secundaria: #304968;
+    --cor-terciaria: #36C1A0;
+    --cor-neutra: #B6BCFF;
+    --fonte-titulo: 'Calistoga', 'cursive';
+    --fonte-texto: 'Raleway', sans-serif;
+}
+
+main {
+    width: 100vw;
+    background-image: linear-gradient(to Bottom, var(--cor-terciaria) 70%, var(--cor-secundaria) );
+    
+}
+
+p {
+    font-family: var(--fonte-texto);
+    font-size: 1.25rem;
+    line-height: 40px;
+    
+}
+
+
+.banner-ingresso {
+    width: 100vw;
+    height: 407px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner-ingresso-confirmacao.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+}
+
+
+
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 4em;
+    line-height: 83px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: auto ;
+    
+    
+}
+
+
+h6 {
+    font-size: 2rem;
+    font-family: var(--fonte-texto);
+    line-height: auto;
+    padding: 16px auto;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 64px 0px;
+}
+
+.cartao-ingresso {
+    background-image: linear-gradient(to Bottom,var(--cor-principal), var(--cor-terciaria), var(--cor-secundaria) );
+    margin: 32px auto;
+    width: 792px;
+    gap: 24px;
+    
+}
+
+.titulo-ingresso {
+    margin: 32px auto;
+    display: flex;
+    width: 790px;
+    justify-content: space-between;
+    
+}
+
+.titulo-ingresso img {
+    height: 32px;
+}
+
+.dados-cartao {
+    display: flex;
+}
+#qrcode {
+    height: 222px;
+}
+
+.dados-titular {
+    list-style: none;
+    padding: 0px 10px;
+    width: 648px;
+}
+
+.dados-titular h6{
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+h6 {
+    font-size: 2rem;
+    font-family: var(--fonte-texto);
+    line-height: auto;
+    padding: 16px auto;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1240px) {
+  
+
+    .banner-ingresso {
+        display: flex;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    .titulo-ingresso {
+        display: flex;
+        width: 618px;
+        margin: 0px;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    h6 {
+        margin: auto;
+        width: 618px;
+        text-align: center;
+        padding: 20px 40px;
+    }
+    p {
+        width: fit-content;
+    }
+    
+    .cartao-ingresso {
+        width: 648px;
+        margin: auto;
+    }
+
+    .dados-cartao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    
+    }
+
+    .dados-titular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dados-titular h6 {
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    #qrcode {
+        height: 310px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 765px) {
+    .cartao-ingresso {
+        width: 312px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 2rem;
+        width: auto;
+    }
+
+    .titulo-ingresso {
+        width: auto;
+    }
+    #qrcode {
+        height: 190px;
+    }
+
+    .dados-titular {
+        width: auto;
+    }
+}

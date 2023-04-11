@@ -1,0 +1,150 @@
+
+header {
+    background-color: var(--cor-principal);
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 64px;
+    margin-left: 60px;
+    
+}
+
+header a>.img-logo-codechella {
+    margin-top: 0px ;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-right: 120px;
+    
+}
+
+header a {
+    font-family: var(--fonte-texto);
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.btn-mobile {
+    display: none;
+    width: 32px;
+}
+
+@media screen and (max-width: 1240px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-menu ul {
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 765px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+    
+   
+    
+    header ul {
+        display: block;
+        list-style: none;
+        position: absolute;
+        width: 250px;
+        text-align: center;
+        z-index: 1;
+        right: 0px;
+        top: 80px;
+    }
+
+    header li {
+        padding: 10px 5px;
+        background-color: var(--cor-principal);
+        border-bottom: solid rgb(255, 255, 255) 1px;
+    }
+
+    header a {
+        font-family: var(--fonte-texto);
+        font-size: 1.25em;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        margin-right: 32px;
+        cursor: pointer;
+        
+
+    }
+    header a:hover {
+        text-decoration: underline;
+    }
+    .btn-mobile {
+        display: flex;
+        margin: 44px 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        width: 32px;
+    }
+    
+    .inative {
+        display: none;
+    }
+
+    #hamburger {
+        width: 28px;
+        border-top: 3px solid;
+        border-color: white;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        width: 28px;
+        height: 3px;
+        display: block;
+        background: white;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #btn-mobile.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #btn-mobile.active #hamburger::before {
+        transform: rotate(225deg);
+    }
+
+    #btn-mobile.active #hamburger::after {
+        transform: rotate(-225deg);
+        top: -8px;
+
+    }
+
+}

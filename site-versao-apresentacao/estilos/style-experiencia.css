@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+
+:root {
+    --cor-principal: #4650BD;
+    --cor-secundaria: #304968;
+    --cor-terciaria: #36C1A0;
+    --cor-neutra: #B6BCFF;
+    --fonte-titulo: 'Calistoga', 'cursive';
+    --fonte-texto: 'Raleway', sans-serif;
+}
+
+main {
+    width: 100vw;
+    background-image: linear-gradient(to Bottom, #304968, #36c1a0, #4650bd );
+    
+}
+
+p {
+    font-family: var(--fonte-texto);
+    font-size: 1.25rem;
+    line-height: 40px;
+    padding: 16px 24px;
+}
+
+
+.banner-experiencia {
+    width: 100vw;
+    height: 407px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../imagens/banner-experiencia-desktop.jpeg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+}
+
+h1 {
+    width: 542px;
+    font-family: var(--fonte-titulo);
+    font-size: 4em;
+    line-height: 83px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: auto ;
+    
+}
+
+.container {
+    width: 1240px;
+    margin: 64px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.container#container-sustentabilidade {
+    flex-direction: row-reverse;
+}
+#foto-1 {
+    height:381px;
+    width: 609px;
+    border-radius: 16px;
+    object-fit: cover; 
+}
+
+#foto-2 {
+    height:381px;
+    width: 609px;
+    border-radius: 16px;
+    object-fit: cover; 
+    
+    
+}
+
+#foto-3 {
+    height:381px;
+    width: 609px;
+    border-radius: 16px; 
+    object-fit: cover; 
+    
+}
+
+#acessibilidade, #sustentabilidade, #atracoes {
+    width: 540px;
+    color: white;
+    
+}
+
+
+#acessibilidade h6, #sustentabilidade h6, #atracoes h6 {
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px auto 24px auto;
+}
+
+#acessibilidade p, #sustentabilidade p, #atracoes p {
+    font-family: var(--fonte-texto);
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 170%;
+    padding: 20px;
+}
+
+#acessibilidade p, #atracoes p{
+    text-align: left;
+}
+
+#sustentabilidade p {
+    text-align: right;
+}
+
+@media screen and (max-width: 1240px) {
+  
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 648px;
+       
+    }
+
+    .container#container-sustentabilidade {
+        flex-direction: column;
+    }
+
+    
+    #foto-1, #foto-2, #foto-3, #acessibilidade, #sustentabilidade, #atracoes{
+        margin: auto;
+        width: 609px;
+        padding: 0px;
+
+    }
+
+    #acessibilidade, #sustentabilidade, #atracoes {
+        padding-bottom: 24px;
+    }
+
+    #acessibilidade p, #sustentabilidade p, #atracoes p , h6{
+        text-align: center;
+        padding: 0px;
+      
+    }
+
+    #acessibilidade p, #sustentabilidade p, #atracoes p {
+        font-size: 1.25rem ;
+        
+        
+    }
+
+}  
+@media screen and (max-width: 765px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 312px;
+        align-items: center;
+        
+    }
+
+    #foto-1 , #foto-2, #foto-3{
+        margin: auto;
+        width: 312px;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: auto;
+    }
+
+    h3 {
+        font-size: 2rem;
+        width: auto;
+    }
+
+    #acessibilidade, #sustentabilidade, #atracoes {
+        width: 312px;
+        margin: auto;
+    }    
+
+    .container#container-sustentabilidade {
+        flex-direction: column;
+    }
+    
+}
