@@ -44,7 +44,9 @@ main {
 .intro h1 {
     font-family: var(--fonte-principal);
     font-size: 3rem;
-    background-color: #000000c4;
+    padding: 16px;
+    text-align: center;
+    background-color: #00000059;
     box-sizing: border-box;
     margin: auto;
     z-index: 1;
@@ -87,7 +89,7 @@ h2 {
 
 h2::after, h2::before {
     content: '';
-    width: 140px;
+    width: 120px;
     height: 3px;
     background-color: currentColor;
     display: block;
@@ -131,7 +133,6 @@ h2::after, h2::before {
 }
 
 .btn-principal:hover {
-    
     box-shadow: 5px 5px 3px 2px  #0000007a;
     cursor: pointer;
 }
@@ -143,7 +144,7 @@ h2::after, h2::before {
 
 .servicos {
     width: 1240px;
-    margin: 24px auto;
+    margin: 24px auto auto auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -170,6 +171,9 @@ h2::after, h2::before {
 .servicos>button {
     align-items: center;
     
+}
+.servicos a {
+    text-decoration: none;
 }
 
 .produtos {
@@ -243,41 +247,3 @@ h2::after, h2::before {
     margin-left: 36px;
 }
 
-
-footer {
-    background-color: var(--cor-secundaria);
-    color: white;
-    display: block;
-    
-    gap: 20px;
-    padding: 20px;
-
-}
-.contato {
-    color: white;
-    font-family: var(--fonte-principal);
-    font-size: 1.25rem;
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 24px;
-    padding-bottom:24px ;
-}
-
-.contato img {
-    height: 24px;
-}
-
-
-
-.desenvolvedor {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-}
-
-.desenvolvedor img {
-    height: 24px;
-}

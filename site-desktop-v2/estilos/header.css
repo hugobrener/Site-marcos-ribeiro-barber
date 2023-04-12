@@ -59,3 +59,7 @@ header li {
     margin-right: 80px;
 }
 
+.btn-mobile {
+    display: none;
+}
+

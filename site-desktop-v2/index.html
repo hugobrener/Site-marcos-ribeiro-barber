@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/header.css">
     <link rel="stylesheet" href="estilos/style.css">
-    
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/footer.css">
     <link rel="shortcut icon" href="imagens/logo-header.svg" type="image/x-icon">
     <title>Marcos Ribeiro barber</title>
 </head>
@@ -18,16 +18,19 @@
         <nav class="menu">
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a href="servico.html">serviços</a></li>
-                <li><a href="produtos.html">produtos</a></li>
-                <li><a href="agenda.html">agenda</a></li>
-                <li><a href="cursos.html">cursos</a></li>
+                <li><a href="pages/servicos.html">serviços</a></li>
+                <li><a href="pages/produtos.html">produtos</a></li>
+                <li><a href="pages/agenda.html">agenda</a></li>
+                <li><a href="pages/cursos.html">cursos</a></li>
             </ul>
         </nav>
         <div class="rede-social">
             <a href="https://www.instagram.com/studio_marcos_ribeiro/"><img src="imagens/icone-instagram.png" alt="icone instagram"></a>
             <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5538988357019%26text%3DMarcosribeirobarber&e=AT1djL8qrEw8qED2YUHLLw2UWevcXFcCOdbcLKmLfVHbgy-S2nS16DvvcYzB1k8h2QrwzgQfCM4KYL47J9dAQPqAvNEnXz9u81rZxg"><img src="imagens/icone-whatsapp.png" alt="icone whatsapp"></a>
         </div>
+        <button class="btn-mobile" id="btn-mobile">
+            <span id="hamburger"></span>
+        </button>
     </header>
     <main>
         <section class="intro" id="intro">
@@ -41,7 +44,7 @@
         <section class="agenda">
             <h2>Agende seu horário</h2>
             <p>Selecione o profissonal que vai lhe atender. Confira os horários disponíveis e escolha conforme sua necessidade.</p>
-            <img id='foto-1' src="https://ath2.unileverservices.com/wp-content/uploads/sites/2/2017/03/barbeiro-ruim-724x439.jpg" alt="">
+            <img id='foto-1' src="https://ath2.unileverservices.com/wp-content/uploads/sites/2/2016/08/barbearia-perfeita-606x404.jpg" alt="">
             <button  class="btn-principal" type="button">Agende seu Horário</button>
         </section>
         <section class="servicos">
@@ -57,7 +60,7 @@
                 <li>Hidratação</li>
                 <li>Dia do Noivo</li>
             </ul>
-            <button  class="btn-principal" type="button">Confira</button>
+            <a href="pages/servicos.html"><button  class="btn-principal" type="button">Confira</button></a>
         </section>
         <section class="produtos">
             <h2>Produtos</h2>
