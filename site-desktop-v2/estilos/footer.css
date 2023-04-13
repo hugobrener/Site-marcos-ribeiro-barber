@@ -50,3 +50,8 @@ footer {
 .desenvolvedor img {
     height: 24px;
 }
+
+.desenvolvedor a {
+    text-decoration: none;
+    color: currentColor;
+}
